@@ -45,3 +45,50 @@ class triangle():
 newTriangle = triangle(18,16,14,12)
 print("The area of the triangle is", newTriangle.triangle_area())
 The area of the triangle is 29.393876913398138
+
+# Write a Python program using function concept that maps list of words into a list of integers
+representing the lengths of the corresponding words.
+
+#Define the function
+#Set the lengeth = 0
+#Now split the words using space
+#Check the length and compare with initial value and assign if greater. keep looping for all words
+# Print the one which is longest 
+def find_longest_word(text):
+    longest = 0
+    for words in text.split():
+        print(words,len(words))
+        if len(words) > longest:
+            longest = len(words)
+            longest_word = words
+    print("The longest word is", longest_word, "with length", len(longest_word))
+    return longest_word, len(longest_word)
+
+# def main():
+
+#     words = input("Please input the list of words: ")
+#     integer = eval(input("Please input an integer: "))
+
+#     words1 = filterlongword(words,integer)
+
+#     print("The list of words greater than the integer is",words1)
+
+main()  
+
+#Define the function length and get the words as list
+#initiate list for storing the length of each words
+#read each word and find the length and append to the list
+
+def length_func(words):
+    length = []
+    for word in words:
+        length.append(len(word))
+    return length
+    
+    
+    #Define function vowel and pass 1 str paramter with length 1
+def isVowel(char):
+    # covert to lower on the paramter and check whether it is in the vowel list. 
+    # this result will return true or false
+        result = char.lower() in 'aeiou'
+        return result
