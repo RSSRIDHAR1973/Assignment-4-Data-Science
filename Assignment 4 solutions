@@ -1,0 +1,47 @@
+# 1.1 Write a Python Program(with class concepts) to find the area of the triangle using the below
+# formula.
+# area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+# Function to take the length of the sides of triangle from user should be defined in the parent
+# class and function to calculate the area should be defined in subclass.
+
+
+# #Define the function
+# # pass parameters for the sides s,a,b,c
+# # formula area = (s*(s-a)*(s-b)*(s-c)) ** 0.5 
+
+class triangle():
+    def __init__(self, s, a, b, c):
+        self.surface = s
+        self.firstside = a
+        self.secondside  = b
+        self.thirdside = c
+
+    def triangle_area(self):
+        #use the formula an return the results
+        return (self.surface*(self.surface-self.firstside)*(self.surface-self.secondside
+)*(self.surface-self.thirdside)) ** 0.5
+# 1.1 Write a Python Program(with class concepts) to find the area of the triangle using the below
+# formula.
+# area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+# Function to take the length of the sides of triangle from user should be defined in the parent
+# class and function to calculate the area should be defined in subclass.
+​
+​
+# #Define the function
+# # pass parameters for the sides s,a,b,c
+# # formula area = (s*(s-a)*(s-b)*(s-c)) ** 0.5 
+​
+class triangle():
+    def __init__(self, s, a, b, c):
+        self.surface = s
+        self.firstside = a
+        self.secondside  = b
+        self.thirdside = c
+​
+    def triangle_area(self):
+        #use the formula an return the results
+        return (self.surface*(self.surface-self.firstside)*(self.surface-self.secondside
+)*(self.surface-self.thirdside)) ** 0.5
+newTriangle = triangle(18,16,14,12)
+print("The area of the triangle is", newTriangle.triangle_area())
+The area of the triangle is 29.393876913398138
